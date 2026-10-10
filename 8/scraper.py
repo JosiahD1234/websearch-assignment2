@@ -26,7 +26,7 @@ while frontier:
 
     # Removing the first URL from the frontier
     # --> add your Python code here
-    url = frontier.pop(-1)
+    url = frontier.pop(0)
 
     # Retrieving and parsing the Web page
     # --> add your Python code here

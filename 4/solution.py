@@ -66,7 +66,7 @@ print("d. " + soup.find('h2', string=re.compile(r"tutorial")).get_text())
 contains_html = soup.find_all(string = re.compile(r"HTML"))
 print("e. ", end="")
 for item in contains_html:
-    print(item.get_text())
+    print(item)
 
 # Print all <td> elements in the second <tr> row of the table by navigating the
 # HTML tags
