@@ -29,7 +29,8 @@ def convert_to_absolute_url(links, url):
     for i, link in enumerate(links):
         if bool(re.match(r"^/.*", link)):
             # I found this regex online to extract the domain
-            links[i] = re.search(r"^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)", url).group() + link
+            domain = re.search(r"^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)", url).group()
+            links[i] = domain + link
 
 results = crawler("https://testingurl.dev/scraping/links/circular")
 for result in results:
