@@ -3,7 +3,7 @@
 # FILENAME: scraper.py
 # SPECIFICATION: A web scraper that crawls through the circular links on testingurl.dev
 # FOR: CS 4250 - Assignment #2
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 1 hour
 #-------------------------------------------------------------------------
 
 # Importing Python libraries
